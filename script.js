@@ -97,7 +97,7 @@ var sketchProc = function(processingInstance) {
         }
 
          function mouseClick(event) {
-               blizzard.addSnow(mouseX, mouseY);
+               blizzard.addSnow(event.clientX, event.clientY);
          }  
 
         var mountain1  = new Mountain(200, 300, 100);
