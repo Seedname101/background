@@ -1,6 +1,3 @@
-document.addEventListener("click", mouseClick);
-
-
 var sketchProc = function(processingInstance) {
      with (processingInstance) {
         size(screen.width, screen.height); 
@@ -95,7 +92,8 @@ var sketchProc = function(processingInstance) {
             };
 
         }
-
+          
+         document.addEventListener("click", mouseClick);
          function mouseClick(event) {
                blizzard.addSnow(event.clientX, event.clientY);
          }  
