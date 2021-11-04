@@ -1,7 +1,3 @@
-function printMousePos(event) {
-  console.log("(" + event.clientX + "," + event.clientY + ")" );
-}  
-
 document.addEventListener("click", printMousePos);
 
 
@@ -139,4 +135,9 @@ var sketchProc = function(processingInstance) {
 
     var canvas = document.getElementById("bckgrnd"); 
 
-    var processingInstance = new Processing(canvas, sketchProc); 
+    var processingInstance = new Processing(canvas, sketchProc);
+
+
+function printMousePos(event) {
+  blizzard.addSnow(mouseX, mouseY);
+}  
