@@ -1,4 +1,4 @@
-document.addEventListener("click", printMousePos);
+document.addEventListener("click", mouseClick);
 
 
 var sketchProc = function(processingInstance) {
@@ -96,6 +96,10 @@ var sketchProc = function(processingInstance) {
 
         }
 
+         function mouseClick(event) {
+               blizzard.addSnow(mouseX, mouseY);
+         }  
+
         var mountain1  = new Mountain(200, 300, 100);
         var mountain2  = new Mountain(width-200, 300, 186);
 
@@ -136,8 +140,3 @@ var sketchProc = function(processingInstance) {
     var canvas = document.getElementById("bckgrnd"); 
 
     var processingInstance = new Processing(canvas, sketchProc);
-
-
-function printMousePos(event) {
-  blizzard.addSnow(mouseX, mouseY);
-}  
