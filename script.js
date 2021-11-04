@@ -1,4 +1,11 @@
-   var sketchProc = function(processingInstance) {
+function printMousePos(event) {
+  console.log("(" + event.clientX + "," + event.clientY + ")" );
+}  
+
+document.addEventListener("click", printMousePos);
+
+
+var sketchProc = function(processingInstance) {
      with (processingInstance) {
         size(screen.width, screen.height); 
         frameRate(60);
