@@ -107,7 +107,7 @@ var sketchProc = function(processingInstance) {
         var sides2 = mountain2.getSides();
 
         draw = function() {
-            background(129, 222, 129);
+            background(51, 235, 140);
             fill(0);
             stroke(0);
 
